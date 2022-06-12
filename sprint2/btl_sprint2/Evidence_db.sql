@@ -3,7 +3,7 @@ CREATE TABLE `detective` (
 	`version` INT(11),
 	`create_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
 	`modified_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
-	`ussername` VARCHAR(50),
+	`username` VARCHAR(50),
 	`firstname` VARCHAR(50),
 	`lastname` VARCHAR(50),
 	`password` VARCHAR(50),
