@@ -20,7 +20,13 @@ public class Detective extends AbstractEntity {
     private Set<CriminalCase> criminalCases;
     private Set<TrackEntry> trackEntries;
 
-    public Detective(long id, int version, LocalDateTime createAt, LocalDateTime modifiedAt, String username, String fistName, String lastName, String password, LocalDateTime hiringDate, String badgeNumber, Rank rank, Boolean armed, EmploymentStatus status, Set<CriminalCase> criminalCases, Set<TrackEntry> trackEntries) {
+    public Detective() {}
+
+    public Detective(long id, int version, LocalDateTime createAt, LocalDateTime modifiedAt,
+                     String username, String fistName, String lastName, String password,
+                     LocalDateTime hiringDate, String badgeNumber, Rank rank, Boolean armed,
+                     EmploymentStatus status, Set<CriminalCase> criminalCases,
+                     Set<TrackEntry> trackEntries) {
         super(id, version, createAt, modifiedAt);
         this.username = username;
         this.fistName = fistName;

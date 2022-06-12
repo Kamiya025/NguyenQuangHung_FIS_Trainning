@@ -10,6 +10,9 @@ public abstract class AbstractEntity {
     private LocalDateTime createAt;
     private LocalDateTime modifiedAt;
 
+    public AbstractEntity() {
+    }
+
     public AbstractEntity(long id, int version, LocalDateTime createAt, LocalDateTime modifiedAt) {
         this.id = id;
         this.version = version;

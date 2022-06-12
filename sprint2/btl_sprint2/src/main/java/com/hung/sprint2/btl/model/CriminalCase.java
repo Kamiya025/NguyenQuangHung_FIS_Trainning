@@ -5,6 +5,7 @@ import com.hung.sprint2.btl.model.util.CaseType;
 
 
 import java.time.LocalDateTime;
+import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
@@ -20,7 +21,12 @@ public class CriminalCase extends AbstractEntity {
     private Detective loadInvestigator;
     private Set<Detective> assigned;
 
-    public CriminalCase(long id, int version, LocalDateTime createAt, LocalDateTime modifiedAt, String number, CaseType type, String shortDescription, String detailedDescription, CaseStatus status, String notes, Set<Evidence> evidenceSet, Detective loadInvestigator, Set<Detective> assigned) {
+    public CriminalCase() {}
+
+    public CriminalCase(long id, int version, LocalDateTime createAt, LocalDateTime modifiedAt,
+                        String number, CaseType type, String shortDescription, String detailedDescription,
+                        CaseStatus status, String notes, Set<Evidence> evidenceSet, Detective loadInvestigator,
+                        Set<Detective> assigned) {
         super(id, version, createAt, modifiedAt);
         this.number = number;
         this.type = type;
@@ -121,7 +127,7 @@ public class CriminalCase extends AbstractEntity {
 
     @Override
     public String toString() {
-        return "CriminalCase{" +
+        return super.toString()+"CriminalCase{" +
                 "number='" + number + '\'' +
                 ", type=" + type +
                 ", shortDescription='" + shortDescription + '\'' +

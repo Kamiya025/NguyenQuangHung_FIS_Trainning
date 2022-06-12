@@ -14,6 +14,10 @@ public class Evidence extends AbstractEntity {
     private Boolean archived;
     private Set<TrackEntry> trackEntries;
 
+
+    public Evidence() {
+    }
+
     public Evidence(long id, int version, LocalDateTime createAt, LocalDateTime modifiedAt, CriminalCase criminalCase, Storage storage, String number, String itemName, String notes, Boolean archived, Set<TrackEntry> trackEntries) {
         super(id, version, createAt, modifiedAt);
         this.criminalCase = criminalCase;

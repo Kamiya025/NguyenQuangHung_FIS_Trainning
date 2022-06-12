@@ -8,6 +8,8 @@ public class NumberGenerator {
     private String upper;
     private String digits;
 
+
+
     public NumberGenerator(Random rand, String upper, String digits) {
         this.rand = rand;
         this.upper = upper;

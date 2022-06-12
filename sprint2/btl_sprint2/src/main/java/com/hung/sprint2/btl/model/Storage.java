@@ -10,6 +10,9 @@ public class Storage extends AbstractEntity {
     private String location;
     private Set<Evidence> evidenceSet;
 
+    public Storage() {
+    }
+
     public Storage(long id, int version, LocalDateTime createAt, LocalDateTime modifiedAt, String name, String location, Set<Evidence> evidenceSet) {
         super(id, version, createAt, modifiedAt);
         this.name = name;
