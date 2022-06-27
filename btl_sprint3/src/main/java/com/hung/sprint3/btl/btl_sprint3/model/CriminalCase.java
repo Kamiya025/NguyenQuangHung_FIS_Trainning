@@ -28,7 +28,7 @@ public class CriminalCase extends AbstractEntity {
     private CaseStatus status;
     private String notes;
 //    private Set<Evidence> evidenceSet;
-    @OneToOne
+    @OneToMany
     @JoinColumn(name = "detective_id", referencedColumnName = "id")
     private Detective loadInvestigator;
 
